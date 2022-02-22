@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Znanstveni forum - o autoru</title>
+        <meta charset="utf-8"/>
+    </head>
+    <body>
+
+       <style type="text/css">
+           body {
+               background-color: whitesmoke;
+           }
+
+           h1 {
+               background-color: rgb(31, 61, 122);
+               color: white;
+               font-size: 20px;
+               text-align: center;
+               font-weight: normal;
+               padding: 15px;
+            }
+
+            #info_grupa {
+                display: grid;
+                grid-template-columns: auto auto;
+                margin-left: 25%;
+                margin-right: 25%;
+                margin-top: 50px;
+                background-color: white;
+                color: rgb(78, 77, 77);
+                box-shadow: 0 10px 20px rgb(204, 204, 204);
+            }
+
+            img {
+                width: 300px;
+                height: 400px;
+            }
+
+            #info_grupa div {
+                margin-top: 25%;
+                margin-bottom: 25%;
+                font-size: 15px;
+                margin-left: 20px;
+            }
+
+            span {
+                font-weight: bold;
+            }
+
+            @media screen and (max-width : 850px){
+                #info_grupa {
+                    display: inline-block;
+                    text-align: center;
+                }
+                #info_grupa div {
+                    margin-left: 0;
+                }
+            }
+
+            #poveznica_oautoru {
+                color: rgb(31, 61, 122);
+                font-size: 16px;
+                text-decoration: none;
+                float: right;
+                margin-right: 20px;
+                margin-top: 25px;
+            }
+
+            #poveznica_oautoru:hover {
+                color:rgb(78, 77, 77);
+            }
+
+       </style>
+
+       <section>
+            <h1>INFORMACIJE O AUTORU</h1>
+            <div id="info_grupa">
+                <img src="korisnici/admin.jpg" alt="Julija Počekal">
+                <div>
+                    <p><span>IME I PREZIME:</span> Julija Počekal</p>
+                    <p><span>EMAIL:</span> julijapocekal@outlook.com</p>
+                    <p><span>GITHUB:</span> https://github.com/julipoc</p>
+                    <a href="index.php" id="poveznica_oautoru">Vratite se na stranicu</a>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

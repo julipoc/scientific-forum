@@ -1,0 +1,334 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(242, 242, 242);
+}
+
+
+nav {
+    background-color: rgb(31, 61, 122);
+    height: 50px;
+}
+
+
+nav a {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    margin: 8px;
+    margin-top: 15px;
+    float: left;
+
+}
+
+nav a:hover {
+    color: rgb(189, 193, 194);
+}
+
+#info:hover {
+    color: white;
+}
+
+@media screen and (max-width : 1040px){
+    nav {
+        height: 80px;
+        /* background-color: rgb(31, 61, 122); */
+    }
+
+}
+
+
+@media screen and (max-width : 780px){
+    nav {
+        display: grid;
+        height: 170px;
+        background-color: rgb(31, 61, 122);
+    }
+    nav a {
+        margin: 0px;
+        margin-top: 1px;
+        text-align: center;
+    }
+
+}
+
+
+header {
+    height: 20px;
+    margin: 8px;
+}
+
+footer {
+    text-align: center;
+}
+
+#o_autoru {
+    text-decoration: none;
+    color: rgb(31, 61, 122);
+    color: rgb(78, 77, 77);
+    /* position: relative; */
+    float: right;
+}
+
+#profil, #info, #odjava, #prijava {
+    float: right;
+}
+
+#naslov {
+    font-size: 20px;
+    margin-top: 12px;
+}
+
+
+
+
+#galerija_naslov, #znanstvena_podrucja_naslov, #komentari_naslov, #zahtjevi_naslov, #korisnici_naslov, #statistika_naslov, #profil_naslov, #filter_naslov {
+    text-align: center;
+    font-size: 22px;
+    padding-top: 15px;
+    color: rgb(78, 77, 77);
+}
+
+#galerija_znanstvenika {
+    background-color: white;
+    margin: 50px;
+    box-shadow: 0 10px 20px rgb(204, 204, 204);
+    border-radius: 2px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto; 
+}
+
+
+#galerija_znanstvenika img {
+    width: 195px;
+    height: 250px;
+    border: 1px solid rgb(204, 204, 204);
+    float: left;  
+    margin: 25px;
+    box-shadow: 0 10px 20px rgb(204, 204, 204); 
+    border-radius: 2px; 
+}
+
+
+#obrazac_prijava, #dodaj_kom, #dodaj_podrucje, #dodaj_korisnika, #azuriranje_korisnika, #azuriranje_podataka, #promjena_podrucja, #azuriraj_podrucje {
+    margin-top: 50px;
+    margin-left: 30%;
+    margin-right: 30%;
+    background-color: white;
+    height: 300px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgb(204, 204, 204); 
+}
+
+#obrazac_prijava h1, #dodaj_kom h1, #dodaj_podrucje h1, #dodaj_korisnika h1, #azuriranje_korisnika h1, #azuriranje_podataka h1, #promjena_podrucja h1, #azuriraj_podrucje h1 {
+    font-size: 18px;
+    color: rgb(78, 77, 77);
+    padding-top: 35px;
+}
+
+#obrazac_prijava form, #dodaj_kom form, #dodaj_podrucje form, #dodaj_korisnika form, #azuriranje_korisnika form, #azuriranje_podataka form, #promjena_podrucja form, #azuriraj_podrucje form {
+    padding-top: 10px;
+    color: rgb(78, 77, 77);
+}
+
+#obrazac_prijava form input, #dodaj_kom form select, #dodaj_kom form textarea, #dodaj_podrucje form input, #dodaj_podrucje form textarea, #dodaj_korisnika form input, #dodaj_korisnika form select, #azuriranje_korisnika form input, #azuriranje_korisnika form select, #azuriranje_podataka form input, #azuriranje_podataka form select, #promjena_podrucja form select, #promjena_podrucja form input, #azuriraj_podrucje form input {
+    margin-bottom: 15px;
+}
+
+#dodaj_kom, #dodaj_podrucje, #dodaj_korisnika, #azuriranje_korisnika, #azuriranje_podataka {
+    height: 380px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+
+#dodaj_korisnika form label, #azuriranje_korisnika form label, #azuriranje_podataka form label {
+    display: inline-block;
+    width: 105px;
+    text-align: left;
+}
+
+#azuriranje_korisnika form label, #azuriranje_podataka form label {
+    width: 140px;
+}
+
+#slika {
+    text-align: right;
+}
+
+#dodaj_korisnika form select, #azuriranje_korisnika form select, #azuriranje_podataka form select, #promjena_podrucja form select {
+    width: 177px;
+    height: 21px;
+}
+
+#dodaj_korisnika, #azuriranje_korisnika, #azuriranje_podataka {
+    height: 100%;
+}
+
+
+
+table {
+    text-align: center;
+    border: 1px solid rgb(31, 61, 122);
+    border-collapse: collapse;
+    width: 60%;
+    background-color: white;
+    margin: auto;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+  }
+  
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+    background-color: rgb(37, 72, 142);
+    color: white;
+    border: 1px solid rgb(31, 61, 122);
+    text-align: center;
+
+}
+
+td a {
+    text-decoration: none;
+    color:rgb(31, 61, 122);
+}
+
+td a:hover {
+    color:black;
+}
+
+#td_broj, #td_id, #td_az, #td_az2 {
+    text-align: center;
+}
+
+
+#znanstvena_podrucja_section, #komentari_section, #zahtjevi_section, #korisnici_section, #statistika_section, #filter_section {
+    background-color: white;
+    margin: 30px;
+    box-shadow: 0 10px 20px rgb(204, 204, 204);
+    border-radius: 2px;
+    padding-bottom: 50px;
+}
+
+
+#znanstvena_podrucja_section div, #komentari_section form, #korisnici_section div, #filter_section  {
+    margin-bottom: 10px;
+    text-align: center;
+    padding-top: 25px;
+    
+}
+
+
+#znanstvena_podrucja_section div a, #dodaj_kom2, #dodaj_kor, #profil_section div a {
+    text-decoration: none;
+    padding: 5px;
+    background-color: rgb(31, 61, 122);
+    color: white;
+    border-radius: 2px;  
+}
+
+#znanstvena_podrucja_section div a:hover, #dodaj_kom2:hover, #dodaj_kor:hover, #profil_section div a:hover {
+    padding: 7px;
+
+}
+
+#komentari_section {
+    text-align: center;  
+}
+
+#zahtjevi_section, #korisnici_section, #statistika_section {
+    padding-top: 25px;
+}
+
+
+
+#korisnik_section, #profil_section, #znanstvenici_section {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 50px;
+    background-color: white;
+    color: rgb(78, 77, 77);
+    box-shadow: 0 10px 20px rgb(204, 204, 204);
+}
+
+
+#znanstvenici_section {
+    text-align: center;
+}
+
+#korisnik_section img, #znanstvenici_section img{
+    width: 250px;
+    height: 350px;
+    border: 1px solid rgb(204, 204, 204);
+    text-align: left;
+}
+
+#znanstvenici_section span {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#profil_section {
+    margin: 39px;
+    padding: 25px;
+
+}
+
+#profil_section img {
+    width: 130px;
+    height: 170px;
+    border-radius: 50%;
+}
+
+#profile1 {
+    text-align: center;
+    border-right: 1px solid rgb(204, 204, 204);
+    padding-right: 15px;
+}
+
+#profil_section div {
+    text-align: center;
+}
+
+#profil2 {
+    padding-left: 15px;
+}
+
+
+
+#korisnik_Section div {
+    margin-left: 20px;
+}
+
+@media screen and (max-width : 850px){
+    #korisnik_section, #znanstvenici_section {
+        display: inline-block;
+        text-align: center;
+    }
+    #korisnik_section div {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width : 1200px){
+    #galerija_znanstvenika {
+        display: inline-block;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width : 750px){
+    #galerija_znanstvenika img {
+        width: 180px;
+        height: 230px;
+    }
+
+}
+
